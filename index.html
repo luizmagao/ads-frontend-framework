@@ -13,6 +13,14 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.fragment.blur {
+				filter: blur(5px);
+			}
+			.fragment.blur.visible {
+				filter: none;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -167,6 +175,141 @@
 						<p class="fragment">
 							Tente usar funções da própria linguagem para ajudar no arredondamento da média das idades.
 						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						Aula 06 - 28/08/2024
+					</section>
+					<section>
+						<h2 data-id="code-title=">Mais sobre funções</h2>
+					</section>
+					<section>
+						<h2 data-id="code-title=">
+							"Como vivem? Onde comem? O que fazem?"
+						</h2>
+						<img data-src="dist/images/globo.gif" alt="">
+					</section>
+					<section>
+						<h2 data-id="code-title=">
+							O que são tipos de funções JavaScript?
+						</h2>
+						<p class="fragment">
+							Tipos de funções em JavaScript são diferentes formas de criar e usar blocos de código para realizar tarefas específicas. Temos dois principais tipos de funções: 
+							<span class="fragment highlight-red">funções declaradas e funções expressas</span>.
+						</p>
+					</section>
+					<section>
+						<h2 data-id="code-title=">
+							Funções Declaradas
+						</h2>
+						<p class="fragment">
+							As funções declaradas são definidas usando a palavra-chave `function` seguida por um nome e parâmetros. Elas têm um formato assim:
+						</p>
+					</section>
+					<section>
+						<pre style="font-size: 2.5rem;">
+							<code class="language-javascript" data-line-numbers>
+								<script type="text/template">
+	function saudacao(nome) {
+		return "Olá, " + nome + "!";
+	}
+
+						</script></code></pre>
+						<p class="fragment custom blur">
+							Nesse exemplo, <span class="fragment highlight-red">"saudacao"</span> é o nome da função, 
+							e ela recebe um parâmetro chamado <span class="fragment highlight-red">"nome"</span>. 
+							Quando chamamos a função 
+							<span class="fragment highlight-red">'saudacao("João")'</span>, 
+							ela retorna <span class="fragment highlight-blue">"Olá, João!"</span>.
+						</p>
+					</section>	
+					<section>
+						<h2 data-id="code-title=">
+							Agora é sua vez, bora arriscar?
+						</h2>
+					</section>	
+					
+					<section>
+						<h2 data-id="code-title=">
+							Funções Expressas
+						</h2>
+						<p class="fragment">
+							As funções declaradas são definidas usando a palavra-chave 'function' seguida por um nome e parâmetros. 
+							Elas têm um formato assim:
+						</p>
+					</section>
+					<section>
+						<pre style="font-size: 2.5rem;">
+							<code class="language-javascript" data-line-numbers>
+								<script type="text/template">
+	const saudacao = function(nome) {
+		return "Olá, " + nome + "!";
+	}
+
+						</script></code></pre>
+						<p class="fragment custom blur">
+							Aqui, a função é armazenada na variável <span class="fragment highlight-red">'saudacao'</span>. 
+							Você pode chamá-la da mesma forma que a função declarada: <span class="fragment highlight-red">'saudacao("Maria")'</span>.
+						</p>
+					</section>
+					<section>
+						<p>
+							Ambos os tipos de funções são poderosas e úteis. Podemos aplicá-los em várias situações, desde cálculos matemáticos até manipulação de elementos em páginas da web.
+						</p>
+					</section>
+					<section>
+						<p>Para usar uma função, você precisa chamá-la e fornecer os argumentos necessários. Por exemplo:</p>
+						<pre style="font-size: 1.8rem;">
+							<code class="language-javascript" data-line-numbers>
+								<script type="text/template">
+// Chamada da função com dois argumentos: 5 e 3
+const resultado = somar(5, 3); 
+
+						</script></code></pre>
+					</section>
+					<section>
+						<h2>Algoritmo</h2>
+						<img data-src="dist/images/puxandocabelo.png" alt="">
+					</section>
+					<section>
+						<img data-src="dist/images/papaleguas.png" alt="">
+						<p>Sim, isso nos persegue... para o todo sempre.</p>
+					</section>
+					<section>
+						<img width="500px" data-src="dist/images/cafe-odio-duvida.png" alt="">
+						<p>Uma colher de café ou de chá?</p>
+					</section>
+					<section>
+						<h2>Passo a Passo</h2>
+						<ol style="font-size: 1.7rem;">
+							<li class="fragment">Definimos a função `somar` com dois parâmetros: `a` e `b`;</li>
+							<li class="fragment">
+								Na função, usamos o operador de adição `+` para somar os valores de `a` e `b`;
+							</li>
+							<li class="fragment">
+								Usamos a palavra-chave `return` para retornar o resultado da soma;
+							</li>
+							<li class="fragment">
+								Chamamos a função `somar(5, 3)` e atribuímos o resultado à variável `resultado`;
+							</li>
+							<li class="fragment">
+								Usamos `console.log(resultado)` para imprimir o resultado no console.
+							</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Exemplos práticos de cada tipo de função JavaScript</h2>
+						<ul>
+							<li>Arrow Functions</li>
+							<li>Funções Anônimas</li>
+							<li>Arrow functions de Uma Expressão</li>
+							<li>Funções Imediatamente Invocadas (IIFE)</li>
+							<li>Funções Construtoras</li>
+							<li>Funções de Callback</li>
+							<li>Funções Recursivas</li>
+							<li>Funções de Ordem Superior</li>
+						</ul>
 					</section>
 				</section>
 			</div>
